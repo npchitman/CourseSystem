@@ -2,16 +2,17 @@
   <div class="header">
     <div class="logo">
       <img src="../assets/logo.png" alt />
-      <h1>学生课程管理系统</h1>
+      <h1>学生选课系统</h1>
     </div>
     <el-menu
       :default-active="$route.path"
       class="el-menu-nav"
-      mode="horizontal"
+      v-model="isCollapse"
+      mode="vertical"
       @select="handleSelect"
-      background-color="#545c64"
-      text-color="#fff"
-      active-text-color="#ffd04b"
+      background-color="#34343B"
+      text-color="#ffffff"
+      active-text-color="#FE8150"
       router
     >
       <el-menu-item index="/courses">
@@ -50,24 +51,24 @@ body {
       // padding-right: %;
       li {
         float: right;
-        padding-right: 3em;
+        padding-right: 4em;
       }
     }
     .logo {
       position: absolute;
       z-index: 999;
       left: 2em;
-      top: 0.7em;
+      top: 0.5em;
       img {
-        width: 2.2em;
-        vertical-align: bottom;
+        width: 2.5em;
+        vertical-align: top;
       }
       h1 {
         display: inline;
-        vertical-align: center;
+        vertical-align: bottom;
         color: #fff;
         font-size: 1.7em;
-        font-weight: 300;
+        font-weight: 500;
         font-family: "Courier New", Courier, monospace;
       }
     }

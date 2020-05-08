@@ -4,11 +4,11 @@
       <el-col :span="8">
         <el-card shadow="always">
           <el-divider>
-            <i class="el-icon-mobile-phone"></i>
+            <i class="el-icon-edit"></i>
           </el-divider>
           <el-form ref="selectForm" :model="selectForm" label-width="130px" :rules="rules">
             <el-form-item label="姓名" prop="students">
-              <el-select v-model="selectForm.students" filterable placeholder="请输入姓名?">
+              <el-select v-model="selectForm.students" filterable placeholder="请输入姓名">
                 <el-option
                   v-for="item in students"
                   :key="item.Id"
@@ -55,9 +55,21 @@ export default {
   name: "enrollments",
   data() {
     return {
-      name: "liudaxia",
-      students: [],
-      courses: [],
+      name: "chenyiji",
+      students: [
+        { Name: "陈红安", Id: 1012018009 },
+        { Name: "曾艺璇", Id: 1012018025 },
+        { Name: "薛金昊", Id: 1012018033 },
+        { Name: "苏佩琛", Id: 1032018023 },
+        { Name: "陈琦", Id: 1022017004 }
+      ],
+      courses: [
+        { Title: "软件工程", Id: 0 },
+        { Title: "操作系统", Id: 1 },
+        { Title: "线性代数", Id: 2 },
+        { Title: "马克思主义原理", Id: 3 },
+        { Title: "高等数学", Id: 4 }
+      ],
       grade: [
         { grade: "A", value: 0 },
         { grade: "B", value: 1 },
@@ -177,7 +189,7 @@ export default {
   min-width: 1000px;
   z-index: -10;
   zoom: 1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 1);
   background-repeat: repeat;
   background-size: cover;
   -webkit-background-size: cover;
@@ -188,7 +200,6 @@ export default {
     // 调整选课框位置
     margin: 13% 0 0 0;
     justify-content: center;
-    overflow: hidden;
   }
 }
 </style>

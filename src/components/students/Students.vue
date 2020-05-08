@@ -54,8 +54,8 @@
 
                 <el-form-item label="类型" prop="sex">
                   <el-select v-model="ruleForm.sex" placeholder="请选择学生类型">
-                    <el-option label="Junior" value="0"></el-option>
-                    <el-option label="Senior" value="1"></el-option>
+                    <el-option label="本科生" value="0"></el-option>
+                    <el-option label="研究生" value="1"></el-option>
                   </el-select>
                 </el-form-item>
 

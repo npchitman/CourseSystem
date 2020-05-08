@@ -117,7 +117,7 @@ export default {
   name: "course",
   data() {
     return {
-      name: "liudaxia",
+      name: "chenyiji",
       searchName: "",
       coursesData: [],
       loading: true,
