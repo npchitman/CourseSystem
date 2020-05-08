@@ -23,7 +23,6 @@
       <el-menu-item index="/enrollments">
         <el-badge value="student" class="item">我要选课</el-badge>
       </el-menu-item>
-      <!-- </el-menu-item> -->
     </el-menu>
     <div class="line"></div>
   </div>

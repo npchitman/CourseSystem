@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Courses from "@/components/courses/Courses.vue"
 import Students from "@/components/students/Students"
 import Enrollments from "@/components/enrollments/Enrollments"
-import Aboutme from "@/components/Aboutme"
 
 Vue.use(Router)
 
@@ -28,11 +27,6 @@ export default new Router({
       path:"/enrollments",
       name:"enrollments",
       component:Enrollments
-    },
-    {
-      path:"/aboutme",
-      name:"aboutme",
-      component:Aboutme
     }
 
   ]
