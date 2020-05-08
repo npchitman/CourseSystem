@@ -22,9 +22,9 @@ html {
 }
 .dialogOne .el-dialog__body{
     padding: 0 10% 0 10%
-  } 
+  }
 .dialogOne .el-dialog__body .el-form{
-    padding: 5% 10% 2%   
+    padding: 5% 10% 2%
 }
 .dialogOne .el-dialog__body .el-form .el-select{
     float: left;
@@ -36,18 +36,18 @@ html {
     top: 1em
 }
 .el-col-8:hover{
-    opacity: 1;
+    opacity: 0.95;
 }
 /* 调整选课框位置 */
 .el-col-8{
     align-self: center;
-    opacity: 0.9;
+    opacity: 0.95;
  }
 .el-divider{
     margin: 2em 0 2em 0;
 }
 .el-divider__text{
-    font-size: 0.6em;
+    font-size: 1.5em;
     font-weight: 100;
 }
 .el-image-viewer__close:hover{
