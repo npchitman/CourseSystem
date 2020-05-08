@@ -8,7 +8,7 @@
  4. 打开终端 在此项目文件夹的环境下 执行指令 npm i 【必须！】
  5. 待所有依赖包安装完成后 继续执行指令  npm run dev
  6. 待终端中提示 在浏览器输入此地址访问
-![终端中提示地址](https://www.platonic.xyz/usr/uploads/2019/08/3464555742.png)
+<br>![终端中提示地址](https://www.platonic.xyz/usr/uploads/2019/08/3464555742.png)<br>
  7. 查看页面 执行想要的操作
 
 ## 二、角色功能分类
