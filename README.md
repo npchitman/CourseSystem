@@ -2,19 +2,19 @@
 
 ## 一、系统部署
 
-**使用cnpm镜像**: 执行以下指令, 使用国内源
-```
-alias cnpm="npm --registry=https://registry.npm.taobao.org \
---cache=$HOME/.npm/.cache/cnpm \
---disturl=https://npm.taobao.org/dist \
---userconfig=$HOME/.cnpmrc"
-```
  1. 安装 [npm](https://www.npmjs.com/), [node.js](https://nodejs.org/zh-cn/) 环境
- 2. 打开终端 在此项目文件夹的环境下 执行指令 `cnpm install`
- 3. 待所有依赖包安装完成后 继续执行指令  `cnpm run dev`
- 4. 待终端中提示 在浏览器输入此地址访问
+ 2. 更换国内源: 打开终端, 执行以下指令
+ ``` bash
+ alias cnpm="npm --registry=https://registry.npm.taobao.org \
+ --cache=$HOME/.npm/.cache/cnpm \
+ --disturl=https://npm.taobao.org/dist \
+ --userconfig=$HOME/.cnpmrc"
+ ```
+ 3. 在此项目文件夹的环境下 在终端执行指令 `cnpm install`
+ 4. 待所有依赖包安装完成后 继续执行指令  `cnpm run dev`
+ 5. 待终端中提示 在浏览器输入此地址访问
 <br>![终端中提示地址](https://www.platonic.xyz/usr/uploads/2019/08/3464555742.png)<br>
- 5. 在浏览器输入地址 `localhost:8080` 即可访问
+ 6. 在浏览器输入地址 `http://localhost:8080` 即可访问
 
 ## 二、角色功能分类
 
