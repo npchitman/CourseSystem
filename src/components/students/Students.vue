@@ -203,11 +203,16 @@ export default {
   name: "student",
   data() {
     return {
-      name: "liudaxia",
+      name: "chenyiji",
       searchName: "",
       searchStudent: [],
-      studentData: [],
-      loading: true,
+      studentData: [
+      {name: "陈琦", date1: 2, date2: 5, sex: "男"},
+      {name: "陈琦", date1: 2, date2: 5, sex: "男"},
+      {name: "陈琦", date1: 2, date2: 5, sex: "男"},
+      {name: "陈琦", date1: 2, date2: 5, sex: "男"}
+        ],
+      /* loading: true, */
       delay: parseInt(200),
       // 增加学生 表单项设置
       ruleForm: {
@@ -273,10 +278,6 @@ export default {
           coursesName: item.CourseId
         };
         this.gridData.push(newCourse);
-        // 这是未成功的尝试
-        // this.axios.get("http://localhost:8004/Courses/Edit?id="+item.CourseId).then(result=>{
-        //   console.log(result.data)
-        // })
       });
     },
 

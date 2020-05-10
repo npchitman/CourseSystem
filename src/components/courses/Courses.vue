@@ -9,7 +9,6 @@
             <el-card>
               <h4>课程查询</h4>
               <el-input placeholder="请输入课程名" class="searchName" v-model="searchName">
-                <!-- <el-button slot="append" type="primary" icon="el-icon-search">搜索</el-button> -->
               </el-input>
               <el-button type="primary" icon="el-icon-search" round>搜索</el-button>
             </el-card>
@@ -119,8 +118,13 @@ export default {
     return {
       name: "chenyiji",
       searchName: "",
-      coursesData: [],
-      loading: true,
+      coursesData: [
+      {Title: "软件工程", Number: 0, Introduction: "轻松娱乐休闲"},
+      {Title: "数媒概论", Number: 1, Introduction: "听了好想睡觉的课"},
+      {Title: "线性代数", Number: 2, Introduction: "听了就知道自己学不会的课"},
+      {Title: "操作系统", Number: 3, Introduction: "听了就不想学的课"}
+      ],
+      /* loading: true, */
       // 增加课程 表单项设置
       ruleForm: {
         Title: "",
