@@ -1,5 +1,7 @@
 # 【学生课程信息管理系统 使用文档】
 
+[选课系统演示](http://47.110.143.150/)
+
 ## 一、系统部署
 
  1. 安装 [npm](https://www.npmjs.com/), [node.js](https://nodejs.org/zh-cn/) 环境
